@@ -13,7 +13,7 @@ public interface Command {
 
     default void validateName(Update update) {
         var command = update.getMessage().getText();
-        if (!command.equalsIgnoreCase(getName())) {
+        if (!command.startsWith(getName())) {
             throw new CommandException("The name " + command + " does not match " + getName());
         }
     }

@@ -14,7 +14,7 @@ public class CommandSelector {
 
     public Command select(String command) {
         return commands.stream()
-                .filter(c -> c.getName().equalsIgnoreCase(command))
+                .filter(c -> command.startsWith(c.getName()))
                 .findFirst()
                 .orElseThrow();
     }
