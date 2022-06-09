@@ -12,8 +12,7 @@
             <column name="name" type="varchar(250)">
                 <constraints unique="true" uniqueConstraintName="name_owner_unq" />
             </column>
-            <column name="name" type="varchar(250)">
-                <constraints unique="true" uniqueConstraintName="name_owner_unq" />
+            <column name="time_stamp" type="TIMESTAMPTZ">
             </column>
         </createTable>
         <addAutoIncrement tableName="countdown" columnName="id" columnDataType="int" startWith="1" incrementBy="1" />
