@@ -13,9 +13,9 @@ public class BotConfig {
     private String token;
 
     @Bean
-    public CountDownBot countDownBot(StartCommand startCommand) throws TelegramApiException {
+    public CountDownBot countDownBot(CommandSelector commandSelector) throws TelegramApiException {
         final var api = new TelegramBotsApi(DefaultBotSession.class);
-        final var bot = new CountDownBot(token, startCommand);
+        final var bot = new CountDownBot(token, commandSelector);
 
         api.registerBot(bot);
 
