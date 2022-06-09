@@ -46,6 +46,13 @@ public class NewCommand implements Command {
 
         System.out.println("Name " + name + " Datetime " + datetime);
 
+        if (countdownRepository.existsByName(name)) {
+            var retMessage = new SendMessage();
+            retMessage.setChatId(update.getMessage().getChatId().toString());
+            retMessage.setText(String.format("The countdown name %s is already exists! Please use the unique name.", name));
+            return retMessage;
+        }
+
         countdownRepository.save(Countdown.builder()
                 .name(name)
                 .timeStamp(datetime)
