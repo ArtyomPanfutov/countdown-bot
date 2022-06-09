@@ -1,7 +1,7 @@
 # Countdown Bot for Telegram
 
 ## Environment:
-  Could be run in docker container. Requires a running RDBMS(postgers)
+  Could be run in a docker container. Requires a running RDBMS(postgers)
 ## Required properties:
 -   telegram.bot.token=${TELEGRAM_TOKEN}
 -   spring.datasource.url=${POSTGRES_URL}
