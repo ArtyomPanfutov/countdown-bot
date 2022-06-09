@@ -22,7 +22,7 @@ public class StartCommand implements Command {
 
         final var message = new SendMessage();
         message.setChatId(update.getMessage().getChatId().toString());
-        message.setText("Hi there! \nYou can create a new countdown with the command '/new' or check already existing by using the command '/check <count down name>'");
+        message.setText("Hi there! \nYou can create a new countdown with the command '/new <name> <date and time in format dd/mm/yy hh:mm:ss>' or check already existing by using the command '/check <count down name>'");
 
         return message;
     }
