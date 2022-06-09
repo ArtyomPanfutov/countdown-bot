@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 public class NewCommand implements Command {
 
     private static final DateTimeFormatter FORMATTER =
-            DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+            DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss x");
 
     @Override
     public String getName() {
@@ -28,13 +28,13 @@ public class NewCommand implements Command {
 
         var split = message.getText().split(" ");
 
-        if (split.length != 4) {
+        if (split.length != 5) {
             throw new CommandException("Incorrect message");
         }
         System.out.println("Message: " + message);
 
         final var name = split[1];
-        final var datetime = FORMATTER.parse(split[2] + " " + split[3]);
+        final var datetime = FORMATTER.parse(split[2] + " " + split[3] + " " + split[4]);
 
         System.out.println("Name " + name + " Datetime " + datetime);
 

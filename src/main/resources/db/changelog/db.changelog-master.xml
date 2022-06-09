@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+    <changeSet name="Countdown" author="Artyom Panfutov">
+        <createTable tableName="countdown">
+            <column name="id" type="int">
+                <constraints primaryKey="true" primaryKeyName="countdown_id_pk" />
+            </column>
+            <column name="name" type="varchar(250)">
+                <constraints unique="true" uniqueConstraintName="name_owner_unq" />
+            </column>
+            <column name="name" type="varchar(250)">
+                <constraints unique="true" uniqueConstraintName="name_owner_unq" />
+            </column>
+        </createTable>
+        <addAutoIncrement tableName="countdown" columnName="id" columnDataType="int" startWith="1" incrementBy="1" />
+        <createSequence sequenceName="hibernate_sequence" incrementBy="1" startValue="1" />
+    </changeSet>
+</databaseChangeLog>
