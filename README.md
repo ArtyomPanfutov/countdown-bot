@@ -10,6 +10,11 @@
 
 ## Commands
 - **/new**
-Creates a new countdown.
+<br> Creates a new countdown.
 Example: \new somecountdown 21/12/2029 00:00:00 GMT+3:00
--
+- **/check**
+<br> Prints remaining time for alredy created countdown.
+Example:
+- /check somecountdown
+
+** Deployed bot: @Wombats_countdow_bot
