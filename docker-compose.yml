@@ -10,6 +10,13 @@ services:
       - '5432:5432'
     volumes:
       - db:/var/lib/postgresql/data
+  bot:
+    image: artyompanfutov/countdown-telegram-bot:0.0.1
+    environment:
+      - TELEGRAM_TOKEN=
+      - POSTGRES_URL=
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
 volumes:
   db:
     driver: local
