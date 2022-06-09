@@ -13,7 +13,7 @@
 <br> Creates a new countdown.
 Example: \new somecountdown 21/12/2029 00:00:00 GMT+3:00
 - **/check**
-<br> Prints remaining time for alredy created countdown.
+<br> Prints the remaining time for the alredy created countdown.
 Example:
 - /check somecountdown
 
