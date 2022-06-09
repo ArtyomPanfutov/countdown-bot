@@ -1,4 +1,4 @@
-package com.artyompanfutov.telegram.countdownbot.service;
+package com.artyompanfutov.telegram.countdownbot.commands;
 
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.Message;

@@ -1,4 +1,4 @@
-package com.artyompanfutov.telegram.countdownbot.service;
+package com.artyompanfutov.telegram.countdownbot.commands;
 
 import com.artyompanfutov.telegram.countdownbot.entity.Countdown;
 import com.artyompanfutov.telegram.countdownbot.repository.CountdownRepository;

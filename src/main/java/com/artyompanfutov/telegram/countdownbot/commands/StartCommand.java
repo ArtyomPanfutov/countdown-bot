@@ -1,4 +1,4 @@
-package com.artyompanfutov.telegram.countdownbot.service;
+package com.artyompanfutov.telegram.countdownbot.commands;
 
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;

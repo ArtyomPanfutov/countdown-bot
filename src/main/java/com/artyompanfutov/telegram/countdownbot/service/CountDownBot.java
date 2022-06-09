@@ -1,5 +1,6 @@
 package com.artyompanfutov.telegram.countdownbot.service;
 
+import com.artyompanfutov.telegram.countdownbot.commands.CommandSelector;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.Message;
