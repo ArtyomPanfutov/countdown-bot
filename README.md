@@ -17,4 +17,4 @@ Example: \new somecountdown 21/12/2029 00:00:00 GMT+3:00
 Example:
 - /check somecountdown
 
-** Deployed bot: @Wombats_countdow_bot
+## Deployed bot: @Wombats_countdow_bot
