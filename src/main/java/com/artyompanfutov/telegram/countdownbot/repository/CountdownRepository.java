@@ -6,5 +6,8 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.Optional;
 
 public interface CountdownRepository extends CrudRepository<Countdown, Integer> {
+
     boolean existsByName(String name);
+
+    Optional<Countdown> findByName(String name);
 }

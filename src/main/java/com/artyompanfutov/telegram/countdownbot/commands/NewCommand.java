@@ -10,6 +10,8 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 import javax.annotation.Nullable;
 import java.time.Instant;
+import java.time.OffsetDateTime;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Component
@@ -42,7 +44,7 @@ public class NewCommand implements Command {
         System.out.println("Message: " + message);
 
         final var name = split[1];
-        final var datetime = FORMATTER.parse(split[2] + " " + split[3] + " " + split[4], Instant::from);
+        final var datetime = OffsetDateTime.parse(split[2] + " " + split[3] + " " + split[4], FORMATTER);
 
         System.out.println("Name " + name + " Datetime " + datetime);
 

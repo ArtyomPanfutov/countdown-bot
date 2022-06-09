@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.time.OffsetDateTime;
 
 @Entity
 @Table(name = "countdown", schema = "public")
@@ -24,5 +25,5 @@ public class Countdown {
     private String name;
 
     @Column(name = "time_stamp")
-    private Instant timeStamp;
+    private OffsetDateTime timeStamp;
 }
