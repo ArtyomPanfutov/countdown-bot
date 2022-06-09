@@ -13,7 +13,7 @@ public class CountDownBot extends TelegramLongPollingBot {
 
     private final CommandSelector commandSelector;
 
-    public CountDownBot(String token, CommandSelector commandSelector) throws TelegramApiException {
+    public CountDownBot(String token, CommandSelector commandSelector) {
         this.token = token;
         this.commandSelector = commandSelector;
     }
