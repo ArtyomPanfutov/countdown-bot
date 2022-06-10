@@ -15,7 +15,7 @@ Could be used for calculating the remainin time for future events.
 <br> Creates a new countdown.
 <br>Example: \new somecountdown 21/12/2029 00:00:00 GMT+3:00
 - **/check**
-<br> Prints the remaining time for the alredy created countdown.
+<br> Prints the remaining time for the already created countdown.
 <br> Example:
 /check somecountdown
 
