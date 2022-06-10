@@ -13,11 +13,11 @@ Could be used for calculating the remainin time for future events.
 ## Commands
 - **/new**
 <br> Creates a new countdown.
-Example: \new somecountdown 21/12/2029 00:00:00 GMT+3:00
+<br>Example: \new somecountdown 21/12/2029 00:00:00 GMT+3:00
 - **/check**
 <br> Prints the remaining time for the alredy created countdown.
-Example:
-- /check somecountdown
+<br> Example:
+/check somecountdown
 
 ## Already deployed bot available to use in Telegram: 
 **@Wombats_countdow_bot**
