@@ -1,4 +1,4 @@
-# Countdown Bot for Telegram
+# The Countdown Bot for Telegram
 
 Could be used for calculating time for future events.
 
@@ -20,3 +20,6 @@ Example:
 - /check somecountdown
 
 ## Deployed bot: @Wombats_countdow_bot
+
+## Docker image: artyompanfutov/countdown-telegram-bot:0.0.1
+
