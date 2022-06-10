@@ -19,7 +19,9 @@ Example: \new somecountdown 21/12/2029 00:00:00 GMT+3:00
 Example:
 - /check somecountdown
 
-## Already deployed bot available to use int Telegram: **@Wombats_countdow_bot**
+## Already deployed bot available to use in Telegram: 
+**@Wombats_countdow_bot**
 
-## Docker image: **artyompanfutov/countdown-telegram-bot:0.0.1**
+## Docker image: 
+**artyompanfutov/countdown-telegram-bot:0.0.1**
 
