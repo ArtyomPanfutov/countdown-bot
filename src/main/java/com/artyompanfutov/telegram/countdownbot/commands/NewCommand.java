@@ -35,9 +35,9 @@ public class NewCommand implements Command {
     @Override
     public BotApiMethod<Message> handle(Update update) {
         validateName(update);
-        var message = update.getMessage();
+        final var message = update.getMessage();
 
-        var split = message.getText().split(" ");
+        final var split = message.getText().split(" ");
 
         if (split.length != 5) {
             throw new CommandException("Incorrect message");
@@ -62,7 +62,7 @@ public class NewCommand implements Command {
                 .timeStamp(datetime)
                 .build());
 
-        var retMessage = new SendMessage();
+        final var retMessage = new SendMessage();
         retMessage.setChatId(update.getMessage().getChatId().toString());
         retMessage.setText(String.format("The countdown %s has been successfully registered!", name));
 
