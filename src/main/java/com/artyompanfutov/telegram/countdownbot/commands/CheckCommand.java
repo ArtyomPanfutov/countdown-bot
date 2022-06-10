@@ -1,6 +1,5 @@
 package com.artyompanfutov.telegram.countdownbot.commands;
 
-import com.artyompanfutov.telegram.countdownbot.entity.Countdown;
 import com.artyompanfutov.telegram.countdownbot.repository.CountdownRepository;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
@@ -9,9 +8,8 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 import javax.annotation.Nullable;
-import java.time.*;
-import java.time.temporal.ChronoUnit;
-import java.util.Optional;
+import java.time.Duration;
+import java.time.OffsetDateTime;
 
 @Component
 public class CheckCommand implements Command {
