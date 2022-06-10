@@ -1,6 +1,6 @@
 # The Countdown Bot for Telegram
 
-Could be used for calculating time for future events.
+Could be used for calculating the remainin time for future events.
 
 ## Environment:
   Could be run in a docker container. Requires a running RDBMS(postgers)
