@@ -3,7 +3,7 @@
 Could be used for calculating the remainin time for future events.
 
 ## Environment:
-  Could be run in a docker container. Requires a running RDBMS(postgers)
+  Could be run in a docker container. Requires a RDBMS (e.g. postgers)
 ## Required properties:
 -   telegram.bot.token=${TELEGRAM_TOKEN}
 -   spring.datasource.url=${POSTGRES_URL}
