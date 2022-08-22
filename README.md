@@ -19,7 +19,7 @@ Could be used for calculating the remainin time for future events.
 <br> Example:
 /check somecountdown
 
-## Already deployed bot available to use in Telegram: 
+## Already deployed bot available to use in Telegram (might be unavailable some time): 
 **@Wombats_countdow_bot**
 
 ## Docker image: 
